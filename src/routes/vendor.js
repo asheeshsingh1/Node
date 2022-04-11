@@ -3,9 +3,8 @@ const vendorRouter = express.Router()
 const db = require('../db/connPostGres')
 const Vendor = require('../models/vendorModel')
 const auth = require('../middleware/auth')
-const bcrypt = require('bcryptjs')
 
-//Vendor Create
+//Vendor Routes
 vendorRouter.post('/vendor',async (req,res)=>{
     try {  
         const vendor = new Vendor(req.body)
