@@ -3,6 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const vendorRoutes = require('./src/routes/vendor');
 const restrauntRoutes = require('./src/routes/restraunt');
+const menuRoutes = require('./src/routes/menu');
 // const cors = require('cors');
 // app.use(cors());
 
@@ -15,6 +16,9 @@ app.use(vendorRoutes)
 
 //Restraunt Routes
 app.use(restrauntRoutes)
+
+//Menu Routes
+app.use(menuRoutes)
 
 //App Level Error Handling
 app.get("/", (req, res) => {
