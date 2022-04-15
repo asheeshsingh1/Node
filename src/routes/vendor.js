@@ -37,7 +37,8 @@ vendorRouter.post('/vendor/login',async (req, res)=>{
 })
 
 vendorRouter.get('/vendor/myprofile',auth, async (req,res)=>{
-  res.send(req.vendor)
+  const vendor = new Vendor(req.vendor);
+  res.send({status:"Fetched Consumer Data Successfully",vendor:vendor})
 })
 
 vendorRouter.post('/vendor/logout',auth,async (req, res)=>{
