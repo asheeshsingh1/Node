@@ -1,4 +1,4 @@
-const db = require('../db/connPostGres')
+const db = require('../db/connPostGreSQL')
 
 const validateBoardId = async (restrauntID,ownerId) =>{
     try{
