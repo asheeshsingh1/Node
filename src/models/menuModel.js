@@ -1,10 +1,5 @@
 const mongoose = require('mongoose')
 
-const openState = Object.freeze({
-  Open: 'OPEN',
-  Close: 'CLOSED'
-});
-
 const menuSchema = new mongoose.Schema({
     food_item_name:{
         type: String,
