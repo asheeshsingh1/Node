@@ -1,6 +1,6 @@
 const express = require('express')
 const restrauntRouter = express.Router()
-const db = require('../db/connPostGres')
+const db = require('../db/connPostGreSQL')
 const Restraunt = require('../models/restrauntModel')
 const auth = require('../middleware/auth')
 

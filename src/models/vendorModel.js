@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const validator = require('validator')
 const bcrypt = require('bcryptjs')
-const db = require('../db/connPostGres');
+const db = require('../db/connPostGreSQL');
 const jwt = require('jsonwebtoken')
 
 //Vendor Data Model

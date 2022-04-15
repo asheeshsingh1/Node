@@ -1,6 +1,6 @@
 const express = require('express')
 const vendorRouter = express.Router()
-const db = require('../db/connPostGres')
+const db = require('../db/connPostGreSQL')
 const Vendor = require('../models/vendorModel')
 const auth = require('../middleware/auth')
 

@@ -1,6 +1,6 @@
 const express = require('express')
 const menuRouter = express.Router()
-const db = require('../db/connPostGres')
+const db = require('../db/connPostGreSQL')
 const Menu = require('../models/menuModel')
 const auth = require('../middleware/auth')
 const validRestraunt = require('../validators/customValidateRestraunt')
